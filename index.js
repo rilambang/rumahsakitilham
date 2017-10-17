@@ -16,7 +16,7 @@ app.use('/', function ( req, res, next) {
 // app.use('/api',loginRoute);
 let userPetugasRoute = require('./userPetugas/userPetugasRoute');
 app.use('/api',userPetugasRoute);
-
+mong.connet('mongodb://doni:h4g4t4doniozan@ds121345.mlab.com:21345/rumahsakit');
 app.listen(process.env.PORT || 8889, function() {
   console.log('Node app is running on port', app.get('port'));
 });
